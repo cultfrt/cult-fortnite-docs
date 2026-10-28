@@ -1,0 +1,53 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "CULT FORTNITE",
+  "theme": "mint",
+  "description": "Мануал по офферу Fortnite: трафик, логи, деньги. Написано человеческим языком.",
+  "colors": {
+    "primary": "#7c3aed",
+    "light": "#8b5cf6",
+    "dark": "#6d28d9"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "navigation": {
+    "language": "ru",
+    "tabs": [
+      {
+        "tab": "Мануал",
+        "groups": [
+          {
+            "group": "Введение",
+            "pages": ["index", "offer", "terms"]
+          },
+          {
+            "group": "Лендинги и предлоги",
+            "pages": ["landing-types"]
+          },
+          {
+            "group": "Ознакомление с ботом",
+            "pages": ["bot-basics", "bot-account", "bot-domains", "bot-accounts"]
+          },
+          {
+            "group": "Залив",
+            "pages": [
+              "platforms",
+              "creative",
+              "uniquification",
+              "tiktok",
+              "instagram"
+            ]
+          },
+          {
+            "group": "Домены и индексация",
+            "pages": ["domains", "indexing"]
+          }
+        ]
+      }
+    ]
+  }
+}
