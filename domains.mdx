@@ -3,67 +3,85 @@ title: "Домены"
 description: "Где покупать, какие зоны живут дольше, прогрев, КТ и как его снять"
 ---
 
-Домен — расходник, и обращаться с ним надо как с расходником: дёшево, много, без сожалений. Но знать правила — обязательно, иначе деньги уходят в молоко.
+Домен это расходник, и обращаться с ним надо как с расходником: дёшево, много, без сожалений. Но знать правила обязательно, иначе деньги уходят в молоко.
 
 ## Где покупать
 
-Телеграм-боты продажи доменов типа 1REG — обходи стороной. Особенно сервисы, которые обещают «антиабуз-домены»: **таких доменов не существует, это маркетинг**.
+Телеграм-боты продажи доменов типа 1REG обходи стороной. Особенно сервисы, которые обещают «антиабуз-домены»: **таких доменов не существует, это маркетинг**.
 
-Рабочая рекомендация: **gname.com**. Данные при регистрации указывай фейковые (любые сгенерированные) — валидации там нет никакой.
+Рабочая рекомендация: **gname.com**. Данные при регистрации указывай фейковые (любые сгенерированные), валидации там нет никакой.
 
 ## Зоны
 
-* Лучше не брать: `.lol`, `.shop`
-* Живут заметно дольше: `.cc`
+| Зона | Вердикт |
+| --- | --- |
+| `.lol`, `.shop` | Лучше не брать |
+| `.cc` | Живёт заметно дольше |
 
-И отдельное «нет»: домены третьего порядка вида `domain.it.cc` (две доменные зоны подряд). Наш бот такие не поддерживает — привязать всё равно не получится.
+И отдельное «нет»: домены третьего порядка вида `domain.it.cc` (две доменные зоны подряд). Наш бот такие не поддерживает, привязать всё равно не получится.
 
 ## Прогрев
 
-Прогрев продлевает жизнь домену. Выбираешь метод с прогревом при добавлении — и просто ждёшь 2 дня, вся работа на нас. Потом спокойно льёшь.
+Прогрев продлевает жизнь домену. Выбираешь метод с прогревом при добавлении, и просто ждёшь 2 дня, вся работа на нас. Потом спокойно льёшь.
 
 ## Тестовая ветка
 
-Запасная ветка на других NS на случай проблем с DNS-провайдером. Такое бывает при добавлении домена или даже на рабочем — мы сообщим, и в боте появится кнопка, которая сделает всё сама: тебе останется только поменять NS у регистратора.
+Запасная ветка на других NS на случай проблем с DNS-провайдером. Такое бывает при добавлении домена или даже на рабочем: мы сообщим, и в боте появится кнопка, которая сделает всё сама. Тебе останется только поменять NS у регистратора.
 
 ## Как проверить, что домен умер
 
-Идёшь на whois.com и смотришь флаги `serverHold` / `clientHold` — любой из них означает, что домен мёртв.
+Идёшь на whois.com и смотришь флаги `serverHold` / `clientHold`. Любой из них означает, что домен мёртв.
 
 ## КТ (красная табличка Google)
 
-Главная болезнь домена — красная табличка «это подозрительный сайт». Лечится двумя путями, и профессионал использует оба параллельно.
+Главная болезнь домена: красная табличка «это подозрительный сайт». Лечится двумя путями, и профессионал использует оба параллельно.
 
-### Способ 1: апелляция
+<Tabs>
+  <Tab title="Апелляция">
+    <Warning>
+    Обязательное условие: перед снятием КТ на домен должен стоять анти-КТ лендинг. Простая белая таблица, которая помогает пройти модерацию.
+    </Warning>
 
-**Обязательное условие:** перед снятием КТ на домен должен стоять анти-КТ лендинг — простая белая таблица, которая помогает пройти модерацию.
+    <Steps>
+      <Step title="Жмёшь «Сообщите нам об этом»">
+        Открываешь свой домен, жмёшь «подробности», в простыне текста ищешь кликабельное «Сообщите нам об этом».
 
-1. Открываешь свой домен, жмёшь «подробности», в простыне текста ищешь кликабельное «Сообщите нам об этом».
+        ![Кнопка «Сообщите нам об этом» под предупреждением Google](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/image-28.png?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=159a5229dab480483a686dc542c74847)
+      </Step>
+      <Step title="Пишешь текст апелляции">
+        В окне апелляции пишешь (можно прямо так): `I have used this site many times and have not been scammed or something, pls review again`
 
-![Сообщите нам об этом](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/image-28.png?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=159a5229dab480483a686dc542c74847)
+        ![Текст апелляции в форме Google](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/image-29.png?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=b98618aff18b3d04ba23695dcabc02cf)
+      </Step>
+      <Step title="Мониторишь статус">
+        Статус проверяешь через [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search?hl=en_GB).
 
-2. В окне апелляции пишешь (можно прямо так): `I have used this site many times and have not been scammed or something, pls review again`
+        ![Проверка статуса домена в Google Safe Browsing](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/image-30.png?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=dfe3f7dc843aaec6c68d484d404f90c8)
+      </Step>
+    </Steps>
 
-![Текст апелляции](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/image-29.png?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=b98618aff18b3d04ba23695dcabc02cf)
+    Не считай этот способ панацеей. Рабочий принцип: словил КТ, отправил апелляцию, **купил новый домен и уже льёшь на него**. Разблокируют старый, отлично; нет, уже всё равно.
+  </Tab>
+  <Tab title="Search Console">
+    <Steps>
+      <Step title="Открываешь Search Console">
+        Идёшь на [Google Search Console](https://search.google.com/search-console/welcome).
+      </Step>
+      <Step title="Копируешь TXT-запись">
+        Add property → Domain → вводишь домен с КТ → копируешь выданную TXT-запись.
 
-3. Мониторишь статус через [Google Safe Browsing](https://transparencyreport.google.com/safe-browsing/search?hl=en_GB).
+        ![TXT-запись для подтверждения домена в Search Console](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/telegram-cloud-photo-size-2-5404797432840790151-x.jpg?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=9ca1019129008b7e20ae2b779dced66d)
+      </Step>
+      <Step title="Отправляешь TXT нашему боту">
+        Идёшь в нашего бота, выбираешь этот домен, жмёшь **«Добавить TXT для снятия КТ»** и отправляешь боту скопированный TXT. Он сам подставит запись.
 
-![Safe Browsing](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/image-30.png?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=dfe3f7dc843aaec6c68d484d404f90c8)
+        ![Кнопка «Добавить TXT для снятия КТ» в боте](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/telegram-cloud-photo-size-2-5404797432840790156-x.jpg?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=614bb299ae5984a1994ff9da6c9ca7bd)
+      </Step>
+      <Step title="Жмёшь Verify">
+        Возвращаешься в Search Console и жмёшь **Verify**.
 
-Не считай этот способ панацеей. Рабочий принцип: словил КТ → отправил апелляцию → **купил новый домен и уже льёшь на него**. Разблокируют старый — отлично, нет — уже всё равно.
-
-### Способ 2: Search Console + TXT
-
-1. Открываешь [Google Search Console](https://search.google.com/search-console/welcome).
-2. Add property → Domain → вводишь домен с КТ → копируешь выданную TXT-запись.
-
-![Копируем TXT](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/telegram-cloud-photo-size-2-5404797432840790151-x.jpg?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=9ca1019129008b7e20ae2b779dced66d)
-
-3. Идёшь в нашего бота, выбираешь этот домен.
-4. Жмёшь **«Добавить TXT для снятия КТ»** и отправляешь боту скопированный TXT — он сам подставит запись.
-
-![Добавить TXT в боте](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/telegram-cloud-photo-size-2-5404797432840790156-x.jpg?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=614bb299ae5984a1994ff9da6c9ca7bd)
-
-5. Возвращаешься в Search Console и жмёшь **Verify**.
-
-![Verify](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/telegram-cloud-photo-size-2-5404797432840790158-x.jpg?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=d1f387f7771a3c0b44125561830bd816)
+        ![Кнопка Verify в Search Console](https://mintcdn.com/mercury-84bcef65/4DJRa5XCTNKdTeqT/images/telegram-cloud-photo-size-2-5404797432840790158-x.jpg?fit=max&auto=format&n=4DJRa5XCTNKdTeqT&q=85&s=d1f387f7771a3c0b44125561830bd816)
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
