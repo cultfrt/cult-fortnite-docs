@@ -44,7 +44,7 @@
           },
           {
             "group": "Домены и индексация",
-            "pages": ["domains", "indexing"]
+            "pages": ["domains"]
           }
         ]
       }
