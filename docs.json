@@ -30,7 +30,7 @@
           },
           {
             "group": "Ознакомление с ботом",
-            "pages": ["bot-basics", "bot-account", "bot-domains", "bot-links", "bot-accounts"]
+            "pages": ["bot-basics", "bot-account", "bot-domains", "bot-accounts"]
           },
           {
             "group": "Залив",
