@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npx mint@latest deploy --subdomain sex-152d7f50-3a118168
+      - run: npx mint@latest deploy --subdomain sex-152d7f50
